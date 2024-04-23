@@ -9,18 +9,45 @@ public class Driver {
         Scanner scanner = new Scanner(System.in);
         Word word = new Word();
         word.setAsCorrectWord();
-
-        for (int i =0; i< 5; i++){
-            System.out.println("make a guess: ");
+        Boolean stoppedEarly=false;
+        int i=1;
+        //FileIO.getStats();
+        while (i <=6){
+            System.out.println("Guess "+i+", make a guess: ");
             String inputguess = scanner.nextLine();
             Word guess = new Word(inputguess);
-            System.out.println(word.letterstoString());
+            if (guess.word.equals("stop")){
+                FileIO.writeToOutputFile(Integer.toString(i));
+                stoppedEarly=true;
+                i=7;
+                break;
+            }
+            //System.out.println(word.letterstoString());
             System.out.println(guess.letterstoString());
             WordChecker wChecker = new WordChecker(word, guess);
-            wChecker.CompareWords();
+            System.out.println("Valid Guess: "+wChecker.isValidWord(guess));
+            if (wChecker.isValidWord(guess)){
+                wChecker.CompareWords();
+                if (wChecker.isCorrectWord()){
+                    FileIO.writeToOutputFile(Integer.toString(i));
+                    stoppedEarly=true;
+                    break;
+                }
+                i++;
+            }
+            else{
+                System.out.println("Invalid Guess");
+            }
         }
 
         scanner.close();
+        if (!stoppedEarly){
+        FileIO.writeToOutputFile("7");
+        }
+
+        Statistics.displayStats();
+        System.out.println("The word was " + word.letterstoString());
+
     }
 
 

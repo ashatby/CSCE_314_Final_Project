@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SampleController">
+   <children>
+      <Label fx:id="Wordle_Title" layoutX="168.0" layoutY="22.0" text="WORDLE">
+         <font>
+            <Font name="Elephant" size="38.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="29.0" layoutY="92.0" prefHeight="326.0" prefWidth="492.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="letter00" alignment="CENTER" prefHeight="74.0" prefWidth="98.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter01" alignment="CENTER" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter02" alignment="CENTER" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter03" alignment="CENTER" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter04" alignment="CENTER" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter10" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter11" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter12" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter13" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter14" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter20" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.rowIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter21" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter22" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter23" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter24" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter30" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter31" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter32" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter33" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter34" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter40" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter41" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter42" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter43" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter44" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter50" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter51" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter52" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter53" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="letter54" alignment="CENTER" disable="true" prefHeight="74.0" prefWidth="98.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button fx:id="e_Buton" layoutX="173.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="E" />
+      <Button fx:id="b_Buton" layoutX="292.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="B" />
+      <Button fx:id="z_Buton" layoutX="156.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="Z" />
+      <Button fx:id="r_Buton" layoutX="207.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="R" />
+      <Button fx:id="y_Buton" layoutX="275.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="Y" />
+      <Button fx:id="t_Buton" layoutX="241.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="T" />
+      <Button fx:id="g_Buton" layoutX="258.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="G" />
+      <Button fx:id="w_Buton" layoutX="139.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="W" />
+      <Button fx:id="q_Buton" layoutX="105.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="Q" />
+      <Button fx:id="u_Buton" layoutX="309.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="U" />
+      <Button fx:id="i_Buton" layoutX="343.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="I" />
+      <Button fx:id="o_Buton" layoutX="377.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="O" />
+      <Button fx:id="p_Buton" layoutX="411.0" layoutY="496.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="P" />
+      <Button fx:id="a_Buton" layoutX="122.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="A" />
+      <Button fx:id="s_Buton" layoutX="156.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="S" />
+      <Button fx:id="d_Buton" layoutX="190.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="D" />
+      <Button fx:id="f_Buton" layoutX="224.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="F" />
+      <Button fx:id="h_Buton" layoutX="292.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="H" />
+      <Button fx:id="j_Buton" layoutX="326.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="J" />
+      <Button fx:id="k_Buton" layoutX="360.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="K" />
+      <Button fx:id="l_Buton" layoutX="394.0" layoutY="544.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="L" />
+      <Button layoutX="190.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="X" fx:id="x_Buton" />
+      <Button fx:id="c_Buton" layoutX="224.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="C" />
+      <Button fx:id="v_Buton" layoutX="258.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="V" />
+      <Button fx:id="n_Buton" layoutX="326.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="N" />
+      <Button fx:id="m_Buton" layoutX="360.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="34.0" text="M" />
+      <Button fx:id="backspace_Buton" layoutX="394.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="51.0" text="⌫" />
+      <Button fx:id="enter_Buton" layoutX="105.0" layoutY="592.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="51.0" text="Enter" />
+      <Button fx:id="Start_Button" layoutX="225.0" layoutY="667.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="99.0" text="Start">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="middleLabel" layoutX="236.0" layoutY="447.0" text="Make A Guess!" />
+   </children>
+</AnchorPane>
